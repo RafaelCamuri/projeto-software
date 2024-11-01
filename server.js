@@ -10,12 +10,12 @@ app.use(express.static('public'));
 // Rotas
 const funcionarios = require('./routes/funcionarios');
 const departamentos = require('./routes/departamentos');
-// const projetos = require('./routes/projetos');
+const projetos = require('./routes/projetos');
 // const equipes = require('./routes/equipes');
 
 app.use('/funcionarios', funcionarios);
 app.use('/departamentos', departamentos);
-// app.use('/projetos', projetos);
+app.use('/projetos', projetos);
 // app.use('/equipes', equipes);
 
 // Iniciar o servidor

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inserir Projeto</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Inserir Projeto</h1>
+  <form action="/projetos/inserir" method="POST">
+    <label for="nome">Nome do Projeto:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+    <label for="descricao">Descrição do Projeto:</label>
+    <textarea id="descricao" name="descricao" required></textarea><br><br>
+    <button type="submit">Inserir</button>
+  </form>
+</body>
+</html>
